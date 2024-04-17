@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header>
@@ -37,7 +37,7 @@
               target="_blank"
             >
               <img
-                src="images/aforest.jpg"
+                src="/images/aforest.jpg"
                 alt="Definantly Not My Project"
                 title="This isn't a project image"
               />
@@ -51,7 +51,7 @@
               target="_blank"
             >
               <img
-                src="images/Iwanttobeoutside.jpg"
+                src="/images/Iwanttobeoutside.jpg"
                 alt="Definantly Not A Project"
                 title="Just somewhere I want to be"
               />
@@ -65,7 +65,7 @@
               target="_blank"
             >
               <img
-                src="images/Iwish.jpg"
+                src="/images/Iwish.jpg"
                 alt="Again, definitely not a project of mine"
                 title="I wish"
               />
@@ -79,7 +79,7 @@
               target="_blank"
             >
               <img
-                src="images/surf.jpg"
+                src="/images/surf.jpg"
                 alt="Another not project"
                 title="I like surfing though"
               />
@@ -93,7 +93,7 @@
               target="_blank"
             >
               <img
-                src="images/thisiscool.jpg"
+                src="/images/thisiscool.jpg"
                 alt="Kinda cool"
                 title="This is kinda cool"
               />
@@ -106,7 +106,7 @@
               href="https://github.com/RockyWearsAHat/NoSQL-Social-Media-Server"
               target="_blank"
             >
-              <img src="images/woah.jpg" alt="Where?" title="Hawaii?" />
+              <img src="/images/woah.jpg" alt="Where?" title="Hawaii?" />
               <h3>Project 6</h3>
               <p>On the react portfolio I will</p>
             </a>
@@ -117,7 +117,7 @@
       <section id="contact">
         <h2>Contact Me</h2>
         <div>
-          <form>
+          <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
             <label for="email">Email:</label>
@@ -131,7 +131,7 @@
                 onInput="this.parentNode.dataset.replicatedValue = this.value"
               ></textarea>
             </div>
-            <button type="submit">
+            <button type="submit" id="submitBtn">
               <div>Send</div>
             </button>
           </form>
@@ -153,6 +153,9 @@
         <p>&copy; 2024 Rocky - RockyWearsAHat</p>
       </div>
     </footer>
+
+    <!-- Form submit (Doesn't send anywhere just logs the data, could be mailed back or sent to a database or whatever) -->
+    <script src="/js/formSubmit.js"></script>
 
     <!-- Ionic Icons -->
     <script
