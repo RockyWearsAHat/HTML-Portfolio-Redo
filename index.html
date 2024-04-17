@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>My Portfolio</h1>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <p>
+          Hi. I'm Alex, I also go by Rocky and I write bad projects and
+          unfinished work.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projectWrap">
+          <div class="project" id="proj1">
+            <a
+              href="https://github.com/RockyWearsAHat/Node-PHP"
+              target="_blank"
+            >
+              <img
+                src="images/aforest.jpg"
+                alt="Definantly Not My Project"
+                title="This isn't a project image"
+              />
+              <h3>Project 1</h3>
+              <p>Description of project 1.</p>
+            </a>
+          </div>
+          <div class="project" id="proj2">
+            <a
+              href="https://github.com/RockyWearsAHat/ReadMe-Generator"
+              target="_blank"
+            >
+              <img
+                src="images/Iwanttobeoutside.jpg"
+                alt="Definantly Not A Project"
+                title="Just somewhere I want to be"
+              />
+              <h3>Project 2</h3>
+              <p>Description of project 2.</p>
+            </a>
+          </div>
+          <div class="project" id="proj3">
+            <a
+              href="https://github.com/RockyWearsAHat/graphql-refactor"
+              target="_blank"
+            >
+              <img
+                src="images/Iwish.jpg"
+                alt="Again, definitely not a project of mine"
+                title="I wish"
+              />
+              <h3>Project 3</h3>
+              <p>Description of project 3.</p>
+            </a>
+          </div>
+          <div class="project" id="proj4">
+            <a
+              href="https://github.com/RockyWearsAHat/express-vite-react"
+              target="_blank"
+            >
+              <img
+                src="images/surf.jpg"
+                alt="Another not project"
+                title="I like surfing though"
+              />
+              <h3>Project 4</h3>
+              <p>These do link to repos</p>
+            </a>
+          </div>
+          <div class="project" id="proj5">
+            <a
+              href="https://github.com/RockyWearsAHat/Just-Another-Text-Editor"
+              target="_blank"
+            >
+              <img
+                src="images/thisiscool.jpg"
+                alt="Kinda cool"
+                title="This is kinda cool"
+              />
+              <h3>Project 5</h3>
+              <p>But I'm too lazy to make cool images for them</p>
+            </a>
+          </div>
+          <div class="project" id="proj6">
+            <a
+              href="https://github.com/RockyWearsAHat/NoSQL-Social-Media-Server"
+              target="_blank"
+            >
+              <img src="images/woah.jpg" alt="Where?" title="Hawaii?" />
+              <h3>Project 6</h3>
+              <p>On the react portfolio I will</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <div class="grow-wrap">
+              <textarea
+                id="message"
+                name="message"
+                required
+                onInput="this.parentNode.dataset.replicatedValue = this.value"
+              ></textarea>
+            </div>
+            <button type="submit">
+              <div>Send</div>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div id="linkWrapper">
+          <a
+            href="https://github.com/RockyWearsAHat"
+            target="_blank"
+            title="GitHub"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+        <p>&copy; 2024 Rocky - RockyWearsAHat</p>
+      </div>
+    </footer>
+
+    <!-- Ionic Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
